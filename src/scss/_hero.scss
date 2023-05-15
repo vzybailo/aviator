@@ -3,12 +3,14 @@
     background-repeat: no-repeat;
     background-position: center center; 
     background-size: cover;
-    background-attachment: fixed; 
+    overflow: hidden;
 }
 .avia__logo {
     text-align: center;
 }
 .avia__title {
+    position: relative;
+    z-index: 100;
     font-family: 'Gilroy';
     color: #fff;
     text-align: center;
@@ -108,13 +110,47 @@
     position: absolute;
     left: 0;
     top: 37%;
-    animation: clouds 3s infinite alternate;
+    animation: clouds 4s infinite alternate;
 }
 .cloud__right {
     position: absolute;
     right: 0;
     top: 27%;
-    animation: clouds 3s infinite alternate;
+    animation: clouds 4s infinite alternate;
+}
+.cabin {
+    position: absolute;
+    bottom: 0;
+    z-index: 20;
+    animation: sway 4s 1.5s infinite alternate;
+}
+.title__aviator {
+    position: absolute;
+    bottom: -46%;
+    animation: clouds 3s 1.5s infinite alternate;
+}
+img.plane__left {
+    position: absolute;
+    top: 10%;
+    left: -20%;
+    animation: fly 4s 1s infinite alternate;
+}
+img.plane__right {
+    position: absolute;
+    top: 10%;
+    right: -25%;
+    animation: fly 4s 1s infinite alternate;
+}
+img.border__left {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+img.border__right {
+    position: absolute;
+    top: -8%;
+    right: 2%;
+    transform: rotate(180deg);
 }
 @keyframes clouds {
     0% {
@@ -122,5 +158,21 @@
     }
     100% {
         top: 50%;
+    }
+}
+@keyframes sway {
+    0% {
+        bottom: -15%;
+    }
+    100% {
+        bottom: -25%;
+    }
+}
+@keyframes fly {
+    0% {
+        top: 10%;
+    }
+    100% {
+        top: 15%;
     }
 }
