@@ -1,0 +1,11 @@
+.avia__second-screen {
+    position: relative;
+    top: 100%;
+    height: 100vh;
+    z-index: 1000;
+    background: url('./img/bg-sec.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: all 1s ease;
+}

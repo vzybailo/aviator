@@ -4,7 +4,6 @@ html, body {
 }
 body {
     font-family: 'OpenSans';
-    background: #4D2E30;
     user-select: none;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -21,11 +20,5 @@ a {
 }
 .container {
     position: relative;
-    width: 660px;
-    margin: 0 auto;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
 }
