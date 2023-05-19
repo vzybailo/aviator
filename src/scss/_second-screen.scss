@@ -1,11 +1,24 @@
 .avia__second-screen {
     position: relative;
     top: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: 1000;
     background: url('./img/bg-sec.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     transition: all 1s ease;
+}
+
+.avia__second-screen-bg {
+    opacity: 0;
+    position: relative;
+    height: 100%;
+    z-index: 1000;
+    background-image: url('./img/rays.png');
+    background-color: #361719;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: all .5s ease;
 }

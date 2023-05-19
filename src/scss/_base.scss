@@ -5,6 +5,7 @@ html, body {
 body {
     font-family: 'OpenSans';
     user-select: none;
+    //background: #361719;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Manrope';
@@ -20,5 +21,5 @@ a {
 }
 .container {
     position: relative;
-    height: 100vh;
+    height: 100%;
 }
